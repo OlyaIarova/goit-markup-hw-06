@@ -418,25 +418,25 @@
         </svg>
       </button>
       <h2 class="mobal-title">Залиште свої дані, ми вам передзвонимо</h2>
-      <div class="mobal-form">
-        <form class="form">
+      <form action=" " class="form">
+        <div class="mobal-form">
           <label class="mobal-field">
             <span class="mobal-label">Ім'я</span>
-            <input type="text" class="mobal-imput" name="name" />
+            <input type="text" class="mobal-imput" name="name" required />
             <svg class="mobal-icon" width="18" height="18">
               <use href="./images/icons.svg#icon-person-black"></use>
             </svg>
           </label>
           <label class="mobal-field">
             <span class="mobal-label">Телефон</span>
-            <input type="tel" class="mobal-imput" name="tel" />
-            <svg class="mobal-icon" width="18" height="18">
+            <input type="tel" class="mobal-imput" name="tel" pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" required/>
+          <svg class="mobal-icon" width="18" height="18">
               <use href="./images/icons.svg#icon-phone-black"></use>
             </svg>
           </label>
           <label class="mobal-field">
             <span class="mobal-label">Пошта</span>
-            <input type="email" class="mobal-imput" name="email" />
+            <input type="email" class="mobal-imput" name="email" required/>
             <svg class="mobal-icon" width="18" height="18">
               <use href="./images/icons.svg#icon-email-black"></use>
             </svg>
@@ -446,19 +446,20 @@
             <textarea name="comment" cols="30" rows="10" class="mobal-imput-comment"
               placeholder="Введіть текст"></textarea>
           </label>
-        </form>
-      </div>
-      <label class="mobal-checkbox">
-        <input class="checkbox" type="checkbox" name="checkbox" value=" " />
-        <svg class="mobal-icon-checkbox">
-          <use href="./images/icons.svg#icon-Vector" width="16" height="15"></use>
-        </svg>
-        Погоджуюся з розсилкою та приймаю
-        <a href="./index.html" class="a-checkbox">Умови договору</a>
-      </label>
-      <button type="submit" class="mobal-button">Відправити</button>
+        </div>
+        <label class="mobal-checkbox">
+          <input class="checkbox" type="checkbox" name="checkbox" value=" " />
+          <svg class="mobal-icon-checkbox">
+            <use href="./images/icons.svg#icon-Vector" width="16" height="15"></use>
+          </svg>
+          Погоджуюся з розсилкою та приймаю
+          <a href="./index.html" class="a-checkbox">Умови договору</a>
+        </label>
+        <button type="submit" class="mobal-button">Відправити</button>
+      </form>
     </div>
   </div>
   <script src="./js/modal.js"></script>
 </body>
+
 </html>
